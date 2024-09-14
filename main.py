@@ -45,8 +45,8 @@ try:
             tf.keras.layers.Dense(units=1)
         ])
         history = compile_and_fit(lstm_model, wide_window)
-        lstm_model.save("./src/weatherTSF/models/lstm/weatherTSF.keras")
-        loaded_model = tf.keras.models.load_model('./src/weatherTSF/models/lstm/weatherTSF.keras')
+        lstm_model.save("/content/TimeSeiresForcasting-Weather/src/weatherTSF/models/lstm/weatherTSF.keras")
+        loaded_model = tf.keras.models.load_model('/content/TimeSeiresForcasting-Weather/src/weatherTSF/models/lstm/weatherTSF.keras')
         print(loaded_model.summary())
         #with mlflow.start_run():
          #       mlflow.tensorflow.log_model(loaded_model, "lstm_model")
