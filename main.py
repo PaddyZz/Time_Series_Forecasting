@@ -5,6 +5,7 @@ from src.weatherTSF.components.data_injection import getDataset
 from src.weatherTSF.components.pretrian_model import cleanUpOutlier, splitDataAndNormalization
 from src.weatherTSF.components.data_windowing import WindowGenerator,split_window,make_dataset
 from src.weatherTSF.components.single_step_models import compile_and_fit
+import mlflow
 
 STAGE_NAME ="DATA_INJECTION"
 STAGE_NAME_ONE = "PRETRAIN_MODEL"
@@ -12,8 +13,11 @@ STAGE_NAME_TWO = "DATA_WINDOWING"
 STAGE_NAME_THREE = "SINGLE_STEP_MODELS"
 
 try:
+
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-        
+        mlflow.set_tracking_uri("https://dagshub.com/PaddyZz/TimeSeiresForcasting-Weather.mlflow")
+        mlflow.set_experiment("weatherTSF")
+        mlflow.log_param("learning_rate", 0.01)
         df, date_time = getDataset()
         print(df.head())
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
@@ -42,6 +46,10 @@ try:
         ])
         history = compile_and_fit(lstm_model, wide_window)
         lstm_model.save("./src/weatherTSF/models/lstm")
+        loaded_model = tf.keras.models.load_model("./src/weatherTSF/models/lstm")
+        with mlflow.start_run():
+    # 记录模型
+                mlflow.tensorflow.log_model(loaded_model, "lstm_model")
         logger.info(f">>>>>> stage {STAGE_NAME_THREE} completed <<<<<<\n\nx==========x")
         
 except Exception as e:
