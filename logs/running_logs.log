@@ -1,0 +1,152 @@
+[2024-08-16 17:33:32,657: INFO: main: Welcome to our custom log]
+[2024-08-16 17:33:46,700: INFO: main: Welcome to our custom log]
+[2024-08-16 17:37:42,048: INFO: main: Welcome to our custom log]
+[2024-08-20 11:26:22,133: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-20 11:37:51,231: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-20 11:41:05,640: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-20 11:41:06,363: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-20 11:41:06,364: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 9, in <module>
+    data_injection_example = data_injection()
+TypeError: 'module' object is not callable
+[2024-08-20 11:49:00,408: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-20 11:49:01,123: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-20 11:49:17,062: INFO: main: >>>>>> stage DATA_INJECTION completed <<<<<<
+
+x==========x]
+[2024-08-20 11:54:06,655: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-20 11:54:07,381: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-20 11:54:24,014: INFO: main: >>>>>> stage DATA_INJECTION completed <<<<<<
+
+x==========x]
+[2024-08-20 15:25:21,107: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-20 15:25:21,971: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-20 15:25:37,938: INFO: main: >>>>>> stage DATA_INJECTION completed <<<<<<
+
+x==========x]
+[2024-08-21 14:42:14,030: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-21 14:42:23,733: WARNING: font_manager: Matplotlib is building the font cache; this may take a moment.]
+[2024-08-21 14:42:25,757: INFO: font_manager: generated new fontManager]
+[2024-08-21 14:51:36,407: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-21 14:51:38,438: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-21 14:57:26,917: INFO: main: >>>>>> stage DATA_INJECTION completed <<<<<<
+
+x==========x]
+[2024-08-21 14:57:26,924: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-08-21 14:57:27,027: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-08-21 14:57:27,028: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-08-21 14:57:27,032: INFO: main: >>>>>> stage DATA_WINDOWING completed <<<<<<
+
+x==========x]
+[2024-08-21 14:57:27,033: INFO: main: >>>>>> stage SINGLE_STEP_MODELS started <<<<<<]
+[2024-08-21 14:57:27,613: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\layers\rnn\lstm.py:148: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-08-21 14:57:30,993: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-08-21 15:03:42,180: INFO: main: >>>>>> stage SINGLE_STEP_MODELS completed <<<<<<
+
+x==========x]
+[2024-08-21 19:22:55,611: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-21 19:22:58,651: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-21 19:27:08,594: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 17, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_injection.py", line 39, in getDataset
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-08-21 19:50:05,422: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-21 19:50:09,007: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-21 19:50:09,012: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 17, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_injection.py", line 39, in getDataset
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-08-21 20:13:42,250: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-21 20:13:44,437: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-21 20:13:44,439: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 17, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_injection.py", line 39, in getDataset
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-08-21 20:20:15,529: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-21 20:20:17,469: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-21 20:20:17,472: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 17, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_injection.py", line 39, in getDataset
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-08-21 20:23:16,347: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-21 20:23:18,414: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-21 20:23:18,416: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 17, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_injection.py", line 39, in getDataset
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "C:\Users\14173\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-08-21 20:24:41,301: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-08-21 20:24:43,234: INFO: main: >>>>>> stage DATA_INJECTION started <<<<<<]
+[2024-08-21 20:32:56,425: INFO: main: >>>>>> stage DATA_INJECTION completed <<<<<<
+
+x==========x]
+[2024-08-21 20:32:56,437: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-08-21 20:32:56,521: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-08-21 20:32:56,522: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-08-21 20:32:56,523: INFO: main: >>>>>> stage DATA_WINDOWING completed <<<<<<
+
+x==========x]
+[2024-08-21 20:32:56,525: INFO: main: >>>>>> stage SINGLE_STEP_MODELS started <<<<<<]
+[2024-08-21 20:32:56,983: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\layers\rnn\lstm.py:148: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-08-21 20:32:59,837: WARNING: module_wrapper: From C:\Users\14173\AppData\Roaming\Python\Python310\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-08-21 20:40:02,373: INFO: builder_impl: Assets written to: ./src/weatherTSF/models/lstm\assets]
+[2024-08-21 20:40:02,497: INFO: main: >>>>>> stage SINGLE_STEP_MODELS completed <<<<<<
+
+x==========x]
