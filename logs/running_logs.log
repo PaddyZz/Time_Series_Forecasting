@@ -150,3 +150,677 @@ x==========x]
 [2024-08-21 20:40:02,497: INFO: main: >>>>>> stage SINGLE_STEP_MODELS completed <<<<<<
 
 x==========x]
+[2024-10-01 23:53:05,279: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-01 23:53:20,471: ERROR: main: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 19, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_ingestion.py", line 40, in getDataset
+    os.remove(zip_path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip'
+[2024-10-01 23:55:35,451: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-01 23:55:35,455: ERROR: main: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 19, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_ingestion.py", line 40, in getDataset
+    os.remove(zip_path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip'
+[2024-10-01 23:55:50,433: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-01 23:56:05,587: ERROR: main: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 19, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_ingestion.py", line 40, in getDataset
+    os.remove(zip_path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip'
+[2024-10-02 00:04:11,376: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 00:04:11,484: ERROR: main: [Errno 2] No such file or directory: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 19, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_ingestion.py", line 41, in getDataset
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\zipfile.py", line 1247, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip'
+[2024-10-02 00:04:47,193: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 00:05:04,969: ERROR: main: [Errno 2] No such file or directory: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 19, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_ingestion.py", line 41, in getDataset
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\zipfile.py", line 1247, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip'
+[2024-10-02 00:08:01,136: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 00:08:17,190: ERROR: main: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 19, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_ingestion.py", line 41, in getDataset
+    os.remove(zip_path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\14173\\.keras\\datasets\\jena_climate_2009_2016.csv.zip'
+[2024-10-02 00:08:45,275: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 00:08:47,682: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 00:08:47,684: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 00:08:47,744: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 00:08:47,745: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-02 00:08:47,747: INFO: main: >>>>>> stage DATA_WINDOWING completed <<<<<<
+
+x==========x]
+[2024-10-02 00:08:47,749: INFO: main: >>>>>> stage SINGLE_STEP_MODELS started <<<<<<]
+[2024-10-02 00:12:56,358: INFO: main: >>>>>> stage SINGLE_STEP_MODELS completed <<<<<<
+
+x==========x]
+[2024-10-02 00:12:56,359: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 00:12:56,385: ERROR: main: WindowGenerator.__init__() missing 3 required positional arguments: 'train_df', 'val_df', and 'test_df']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 56, in <module>
+    Baseline_Evaluate(df=df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 24, in Baseline_Evaluate
+    single_step_window = WindowGenerator(
+TypeError: WindowGenerator.__init__() missing 3 required positional arguments: 'train_df', 'val_df', and 'test_df'
+[2024-10-02 00:14:24,266: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 00:14:46,034: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 00:14:46,037: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 00:14:46,112: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 00:14:46,113: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-02 00:14:46,116: INFO: main: >>>>>> stage DATA_WINDOWING completed <<<<<<
+
+x==========x]
+[2024-10-02 00:14:46,118: INFO: main: >>>>>> stage SINGLE_STEP_MODELS started <<<<<<]
+[2024-10-02 00:47:30,528: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 00:47:47,681: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 00:47:47,681: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 00:47:47,742: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 00:47:47,742: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-02 00:47:47,746: INFO: main: >>>>>> stage DATA_WINDOWING completed <<<<<<
+
+x==========x]
+[2024-10-02 00:47:47,748: INFO: main: >>>>>> stage SINGLE_STEP_MODELS started <<<<<<]
+[2024-10-02 00:51:20,975: INFO: main: >>>>>> stage SINGLE_STEP_MODELS completed <<<<<<
+
+x==========x]
+[2024-10-02 00:51:20,975: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 00:51:20,976: ERROR: main: Baseline_Evaluate() missing 3 required positional arguments: 'train_df', 'val_df', and 'test_df']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 56, in <module>
+    Baseline_Evaluate(df=df)
+TypeError: Baseline_Evaluate() missing 3 required positional arguments: 'train_df', 'val_df', and 'test_df'
+[2024-10-02 01:09:41,345: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 01:09:59,188: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 01:09:59,190: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 01:09:59,293: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 01:09:59,314: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-02 01:09:59,329: INFO: main: >>>>>> stage DATA_WINDOWING completed <<<<<<
+
+x==========x]
+[2024-10-02 01:09:59,331: INFO: main: >>>>>> stage SINGLE_STEP_MODELS started <<<<<<]
+[2024-10-02 01:15:15,907: INFO: main: >>>>>> stage SINGLE_STEP_MODELS completed <<<<<<
+
+x==========x]
+[2024-10-02 01:15:15,913: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 01:15:17,828: ERROR: main: 'WindowGenerator' object has no attribute 'plot']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 56, in <module>
+    Baseline_Evaluate(df=df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 39, in Baseline_Evaluate
+    wide_window.plot(baseline)
+AttributeError: 'WindowGenerator' object has no attribute 'plot'
+[2024-10-02 01:59:23,015: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 01:59:40,201: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 01:59:40,202: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 01:59:40,261: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 01:59:40,262: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-02 01:59:40,264: INFO: main: >>>>>> stage DATA_WINDOWING completed <<<<<<
+
+x==========x]
+[2024-10-02 01:59:40,267: INFO: main: >>>>>> stage SINGLE_STEP_MODELS started <<<<<<]
+[2024-10-02 02:04:19,701: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 02:04:38,885: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 02:04:38,885: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 02:04:38,949: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 02:04:38,952: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 02:04:42,478: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 02:06:45,548: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 02:07:02,622: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 02:07:02,622: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 02:07:02,690: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 02:07:02,692: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 02:07:06,137: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 02:09:57,236: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 02:10:14,334: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 02:10:14,334: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 02:10:14,397: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 02:10:14,398: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 02:10:24,721: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 02:20:08,602: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 02:20:25,679: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 02:20:25,679: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 02:20:25,737: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 02:20:25,738: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 02:20:32,612: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 02:29:44,803: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 02:30:02,169: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 02:30:02,170: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 02:30:02,222: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 02:30:02,223: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 02:30:04,441: ERROR: main: File not found: filepath=../models/weatherTSF.keras. Please ensure the file is an accessible `.keras` zip file.]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 59, in <module>
+    Baseline_Evaluate(df=df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 45, in Baseline_Evaluate
+    loaded_model = tf.keras.models.load_model(model_path)
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 198, in load_model
+    raise ValueError(
+ValueError: File not found: filepath=../models/weatherTSF.keras. Please ensure the file is an accessible `.keras` zip file.
+[2024-10-02 02:36:06,620: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 02:36:23,803: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 02:36:23,804: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 02:36:23,870: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 02:36:23,873: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 02:36:26,014: ERROR: main: File not found: filepath=../../models/weatherTSF.keras. Please ensure the file is an accessible `.keras` zip file.]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 59, in <module>
+    Baseline_Evaluate(df=df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 45, in Baseline_Evaluate
+    loaded_model = tf.keras.models.load_model(model_path)
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 198, in load_model
+    raise ValueError(
+ValueError: File not found: filepath=../../models/weatherTSF.keras. Please ensure the file is an accessible `.keras` zip file.
+[2024-10-02 02:59:09,248: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 02:59:34,361: ERROR: main: URL fetch failure on https://storage.googleapis.com/tensorflow/tf-keras-datasets/jena_climate_2009_2016.csv.zip: None -- retrieval incomplete: got only 13147567 out of 13568290 bytes]
+Traceback (most recent call last):
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\utils\file_utils.py", line 291, in get_file
+    urlretrieve(origin, fpath, DLProgbar())
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\urllib\request.py", line 280, in urlretrieve
+    raise ContentTooShortError(
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 13147567 out of 13568290 bytes>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 19, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_ingestion.py", line 30, in getDataset
+    zip_path = tf.keras.utils.get_file(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\utils\file_utils.py", line 295, in get_file
+    raise Exception(error_msg.format(origin, e.errno, e.reason))
+Exception: URL fetch failure on https://storage.googleapis.com/tensorflow/tf-keras-datasets/jena_climate_2009_2016.csv.zip: None -- retrieval incomplete: got only 13147567 out of 13568290 bytes
+[2024-10-02 03:00:05,837: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 03:00:27,096: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 03:00:27,097: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 03:00:27,163: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 03:00:27,166: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 03:00:42,582: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 03:01:46,277: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 03:02:02,907: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 03:02:02,907: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 03:02:02,971: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 03:02:02,974: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 03:02:16,050: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 03:02:34,335: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 03:03:34,117: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 03:03:57,339: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 03:03:57,340: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 03:03:57,397: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 03:03:57,397: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 03:04:11,746: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 16:29:16,023: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 16:29:32,770: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 16:29:32,774: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 16:29:32,840: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 16:29:32,842: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-02 16:29:32,843: INFO: main: >>>>>> stage DATA_WINDOWING completed <<<<<<
+
+x==========x]
+[2024-10-02 16:29:32,843: INFO: main: >>>>>> stage SINGLE_STEP_MODELS started <<<<<<]
+[2024-10-02 16:30:59,356: INFO: main: >>>>>> stage SINGLE_STEP_MODELS completed <<<<<<
+
+x==========x]
+[2024-10-02 16:30:59,356: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 16:31:00,736: ERROR: main: {{function_node __wrapped__StridedSlice_device_/job:localhost/replica:0/task:0/device:CPU:0}} slice index 1 of dimension 2 out of bounds. [Op:StridedSlice] name: strided_slice/]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 60, in <module>
+    wide_window.plot(model=loaded_model)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 89, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\tensorflow\python\framework\ops.py", line 5983, in raise_from_not_ok_status
+    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__StridedSlice_device_/job:localhost/replica:0/task:0/device:CPU:0}} slice index 1 of dimension 2 out of bounds. [Op:StridedSlice] name: strided_slice/
+[2024-10-02 16:57:29,558: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 16:57:46,044: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 16:57:46,044: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 16:57:46,106: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 16:57:46,126: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 16:57:50,217: ERROR: main: 'Baseline' object is not subscriptable]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 61, in <module>
+    Baseline_Evaluate(df=df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 48, in Baseline_Evaluate
+    wide_window.plot(model=Baseline)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 89, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+TypeError: 'Baseline' object is not subscriptable
+[2024-10-02 16:58:34,962: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 16:58:51,153: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 16:58:51,154: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 16:58:51,215: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 16:58:51,215: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 16:58:55,110: ERROR: main: 'Baseline' object is not subscriptable]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 61, in <module>
+    Baseline_Evaluate(df=df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 48, in Baseline_Evaluate
+    wide_window.plot(model=Baseline)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 89, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+TypeError: 'Baseline' object is not subscriptable
+[2024-10-02 16:59:39,878: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 17:00:23,898: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 17:00:23,899: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 17:00:23,965: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 17:00:23,965: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 17:00:27,564: ERROR: main: 'Baseline' object is not subscriptable]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 61, in <module>
+    Baseline_Evaluate(df=df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 48, in Baseline_Evaluate
+    wide_window.plot(Baseline)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 89, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+TypeError: 'Baseline' object is not subscriptable
+[2024-10-02 17:02:52,451: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 17:03:06,196: ERROR: main: URL fetch failure on https://storage.googleapis.com/tensorflow/tf-keras-datasets/jena_climate_2009_2016.csv.zip: None -- retrieval incomplete: got only 13250327 out of 13568290 bytes]
+Traceback (most recent call last):
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\utils\file_utils.py", line 291, in get_file
+    urlretrieve(origin, fpath, DLProgbar())
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\urllib\request.py", line 280, in urlretrieve
+    raise ContentTooShortError(
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 13250327 out of 13568290 bytes>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 19, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_ingestion.py", line 30, in getDataset
+    zip_path = tf.keras.utils.get_file(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\utils\file_utils.py", line 295, in get_file
+    raise Exception(error_msg.format(origin, e.errno, e.reason))
+Exception: URL fetch failure on https://storage.googleapis.com/tensorflow/tf-keras-datasets/jena_climate_2009_2016.csv.zip: None -- retrieval incomplete: got only 13250327 out of 13568290 bytes
+[2024-10-02 17:03:21,488: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 17:03:44,813: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 17:03:44,814: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 17:03:44,882: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 17:03:44,884: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 17:04:00,610: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 17:04:25,640: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 17:04:41,910: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 17:04:41,911: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 17:04:41,974: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 17:04:41,975: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 17:04:53,380: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 17:05:10,258: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 17:05:25,281: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 17:05:25,283: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 17:05:25,350: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 17:05:25,353: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 17:05:28,933: ERROR: main: x and y must be the same size]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 61, in <module>
+    Baseline_Evaluate(df=df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 48, in Baseline_Evaluate
+    wide_window.plot(model=baseline)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 89, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\matplotlib\pyplot.py", line 2862, in scatter
+    __ret = gca().scatter(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\matplotlib\__init__.py", line 1459, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\matplotlib\axes\_axes.py", line 4584, in scatter
+    raise ValueError("x and y must be the same size")
+ValueError: x and y must be the same size
+[2024-10-02 17:06:35,458: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 17:06:52,338: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 17:06:52,339: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 17:06:52,411: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 17:06:52,411: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 17:07:07,158: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 17:07:33,407: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 17:07:49,455: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 17:07:49,455: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 17:07:49,518: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 17:07:49,520: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 17:24:18,147: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 19:47:15,139: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 19:49:08,653: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 19:50:32,307: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 19:50:32,307: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 19:50:32,382: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 19:50:32,382: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 19:52:50,577: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 20:04:03,735: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 20:09:45,222: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 20:09:45,243: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 19, in <module>
+    df, date_time = getDataset()
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_ingestion.py", line 38, in getDataset
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\zipfile.py", line 1265, in __init__
+    self._RealGetContents()
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\zipfile.py", line 1332, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-10-02 20:10:37,324: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 20:10:56,712: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 20:10:56,713: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 20:10:56,787: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 20:10:56,791: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 20:11:00,511: ERROR: main: x and y must be the same size]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 61, in <module>
+    Baseline_Evaluate(df=df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 48, in Baseline_Evaluate
+    wide_window.plot(model=baseline)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 85, in plot
+    plt.scatter(self.label_indices, labels[n, :, :],
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\matplotlib\pyplot.py", line 2862, in scatter
+    __ret = gca().scatter(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\matplotlib\__init__.py", line 1459, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\matplotlib\axes\_axes.py", line 4584, in scatter
+    raise ValueError("x and y must be the same size")
+ValueError: x and y must be the same size
+[2024-10-02 20:11:59,585: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 20:12:18,127: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 20:12:18,128: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 20:12:18,202: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 20:12:18,204: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 20:12:31,980: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 20:20:24,972: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 20:20:43,243: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 20:20:43,243: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 20:20:43,311: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 20:20:43,311: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 20:22:06,671: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 20:22:21,022: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 20:22:38,417: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 20:22:38,419: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 20:22:38,486: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 20:22:38,487: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 20:22:55,654: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-02 20:23:08,266: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-02 20:23:25,524: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-02 20:23:25,524: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-02 20:23:25,587: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-02 20:23:25,587: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-02 20:32:07,650: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-03 11:37:06,596: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 11:38:09,242: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 11:38:34,963: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 11:38:34,963: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 11:38:35,036: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 11:38:35,037: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 11:43:22,897: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-03 11:54:55,634: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 11:55:14,188: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 11:55:14,193: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 11:55:14,266: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 11:55:14,266: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 12:04:14,751: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 12:04:33,891: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 12:04:33,891: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 12:04:33,957: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 12:04:33,957: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 12:13:30,684: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-03 12:15:36,204: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 12:15:53,516: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 12:15:53,516: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 12:15:53,598: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 12:15:53,599: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 12:18:53,193: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-03 12:19:13,606: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 12:20:14,281: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 12:20:14,283: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 12:20:14,381: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 12:20:14,386: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 12:25:51,758: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-03 12:26:05,886: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 12:26:23,553: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 12:26:23,554: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 12:26:23,621: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 12:26:23,622: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 12:27:51,068: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 12:28:16,315: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 12:28:16,316: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 12:28:16,391: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 12:28:16,393: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 12:33:32,894: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-03 12:33:49,007: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 12:34:09,597: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 12:34:09,598: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 12:34:09,673: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 12:34:09,673: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 12:41:12,622: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 12:41:48,557: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 12:41:48,558: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 12:41:48,747: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 12:41:48,747: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 12:42:41,100: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-03 13:22:14,968: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 13:22:42,069: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 13:22:42,072: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 13:22:42,259: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 13:22:42,260: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 13:25:00,308: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-03 13:33:00,733: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]

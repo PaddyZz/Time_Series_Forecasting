@@ -1,25 +1,24 @@
 from src.weatherTSF import logger
-
+import sys
 import tensorflow as tf
-from src.weatherTSF.components.data_injection import getDataset
+from src.weatherTSF.components.data_ingestion import getDataset
 from src.weatherTSF.components.pretrian_model import cleanUpOutlier, splitDataAndNormalization
-from src.weatherTSF.components.data_windowing import WindowGenerator,split_window,make_dataset
+from src.weatherTSF.components.data_windowing import WindowGenerator
 from src.weatherTSF.components.single_step_models import compile_and_fit
-import mlflow
+from src.weatherTSF.components.evalute_model import LSTM_Evaluate
+from src.weatherTSF.components.autoreg_train_model import FeedBack
+from src.weatherTSF.components.autoreg_eval_models import autoregressive_LSTM_Evaluate
 
 STAGE_NAME ="DATA_INGESTION"
 STAGE_NAME_ONE = "PRETRAIN_MODEL"
 STAGE_NAME_TWO = "DATA_WINDOWING"
 STAGE_NAME_THREE = "SINGLE_STEP_MODELS"
+STAGE_NAME_FOUR = "MODEL_EVALUATE"
 
 try:
 
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-        #mlflow.set_tracking_uri("https://dagshub.com/PaddyZz/TimeSeiresForcasting-Weather.mlflow")
-        #mlflow.set_experiment("weatherTSF")
-        #mlflow.log_param("learning_rate", 0.01)
         df, date_time = getDataset()
-        print(df.head())
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 
         logger.info(f">>>>>> stage {STAGE_NAME_ONE} started <<<<<<")
@@ -28,13 +27,15 @@ try:
         train_df,val_df,test_df,num_features = splitDataAndNormalization(df)
         logger.info(f">>>>>> stage {STAGE_NAME_ONE} completed <<<<<<\n\nx==========x")
 
+        """
         logger.info(f">>>>>> stage {STAGE_NAME_TWO} started <<<<<<")
-        WindowGenerator.split_window = split_window
-        WindowGenerator.make_dataset = make_dataset
+        #WindowGenerator.split_window = split_window
+        #WindowGenerator.make_dataset = make_dataset
         wide_window = WindowGenerator(
         input_width=24, label_width=24, shift=1,
         train_df=train_df,val_df=val_df,test_df=test_df,
-        label_columns=['T (degC)'])
+        label_columns=None)
+        
         logger.info(f">>>>>> stage {STAGE_NAME_TWO} completed <<<<<<\n\nx==========x")
 
         logger.info(f">>>>>> stage {STAGE_NAME_THREE} started <<<<<<")
@@ -45,12 +46,26 @@ try:
             tf.keras.layers.Dense(units=1)
         ])
         history = compile_and_fit(lstm_model, wide_window)
-        lstm_model.save("/content/TimeSeiresForcasting-Weather/src/weatherTSF/models/lstm/weatherTSF.keras")
-        loaded_model = tf.keras.models.load_model('/content/TimeSeiresForcasting-Weather/src/weatherTSF/models/lstm/weatherTSF.keras')
+
+        if 'google.colab' in sys.modules:
+                model_path = '/content/TimeSeiresForcasting-Weather/src/weatherTSF/models/weatherTSF.keras'
+        else:
+                model_path = './src/weatherTSF/models/weatherTSF.keras'
+        
+        lstm_model.save(model_path)
+        loaded_model = tf.keras.models.load_model(model_path)
         print(loaded_model.summary())
-        #with mlflow.start_run():
-         #       mlflow.tensorflow.log_model(loaded_model, "lstm_model")
         logger.info(f">>>>>> stage {STAGE_NAME_THREE} completed <<<<<<\n\nx==========x")
+        """
+        logger.info(f">>>>>> stage {STAGE_NAME_FOUR} started <<<<<<")
+        #loaded_model = tf.keras.models.load_model(model_path)
+        #wide_window.plot(model=loaded_model)
+        #LSTM_Evaluate(df,train_df=train_df,val_df=val_df,test_df=test_df)
+        feedback_model = FeedBack(units=32, out_steps=24,num_features=num_features)
+        autoregressive_LSTM_Evaluate(feedback_model=feedback_model,train_df=train_df,val_df=val_df,test_df=test_df)
+        logger.info(f">>>>>> stage {STAGE_NAME_FOUR} completed <<<<<<\n\nx==========x")
+
+        
         
 except Exception as e:
         logger.exception(e)

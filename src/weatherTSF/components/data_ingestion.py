@@ -1,5 +1,5 @@
 import os
-
+import time
 import matplotlib as mpl
 
 import pandas as pd
@@ -36,8 +36,6 @@ def getDataset():
     extract_dir = os.path.dirname(zip_path)
 
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-        if os.path.exists(zip_path):
-            os.remove(zip_path)
         zip_ref.extractall(extract_dir)
         extracted_files = zip_ref.namelist()
     
