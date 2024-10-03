@@ -9,4 +9,7 @@ def autoregressive_LSTM_Evaluate(feedback_model,train_df,val_df,test_df):
     test_df=test_df,
     label_columns=None)
     _ = compile_and_fit(feedback_model, multi_window)
+    model_path = './src/weatherTSF/models/autoreg_LSTM.keras'
+    feedback_model.save(model_path)
+
     multi_window.plot(feedback_model)

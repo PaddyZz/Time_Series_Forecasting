@@ -824,3 +824,15 @@ x==========x]
 [2024-10-03 13:33:00,733: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
 
 x==========x]
+[2024-10-03 16:15:30,412: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 16:16:09,127: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 16:16:09,128: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 16:16:09,193: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 16:16:09,193: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 16:32:49,043: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
