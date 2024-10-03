@@ -836,3 +836,252 @@ x==========x]
 [2024-10-03 16:32:49,043: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
 
 x==========x]
+[2024-10-03 16:57:43,160: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 16:57:59,941: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 16:57:59,942: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 16:57:59,999: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 16:58:00,000: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-03 16:58:00,000: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 16:58:00,003: ERROR: main: File not found: filepath=src\weatherTSF\modelsutoreg_LSTM.keras. Please ensure the file is an accessible `.keras` zip file.]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 61, in <module>
+    loaded_model = tf.keras.models.load_model('src\weatherTSF\models\autoreg_LSTM.keras')
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 198, in load_model
+    raise ValueError(
+ValueError: File not found: filepath=src\weatherTSF\modelsutoreg_LSTM.keras. Please ensure the file is an accessible `.keras` zip file.
+[2024-10-03 17:00:12,268: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 17:00:28,111: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 17:00:28,113: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 17:00:28,176: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 17:00:28,176: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-03 17:00:28,178: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 17:00:28,182: ERROR: main: File not found: filepath=src\weatherTSF\modelsutoreg_LSTM.keras. Please ensure the file is an accessible `.keras` zip file.]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 61, in <module>
+    loaded_model = tf.keras.models.load_model('src\weatherTSF\models\autoreg_LSTM.keras')
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 198, in load_model
+    raise ValueError(
+ValueError: File not found: filepath=src\weatherTSF\modelsutoreg_LSTM.keras. Please ensure the file is an accessible `.keras` zip file.
+[2024-10-03 17:02:54,388: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 17:03:13,271: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 17:03:13,271: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 17:03:13,329: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 17:03:13,332: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-03 17:03:13,333: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 17:03:13,335: ERROR: main: File not found: filepath=src\weatherTSF\modelsutoreg_LSTM.keras. Please ensure the file is an accessible `.keras` zip file.]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 61, in <module>
+    loaded_model = tf.keras.models.load_model('src\weatherTSF\models\autoreg_LSTM.keras')
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 198, in load_model
+    raise ValueError(
+ValueError: File not found: filepath=src\weatherTSF\modelsutoreg_LSTM.keras. Please ensure the file is an accessible `.keras` zip file.
+[2024-10-03 17:04:27,584: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 17:04:42,684: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 17:04:42,685: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 17:04:42,752: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 17:04:42,753: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-03 17:04:42,756: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 17:04:42,804: ERROR: main: <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'src.weatherTSF.components.autoreg_train_model', 'class_name': 'FeedBack', 'config': {'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}, 'registered_name': 'FeedBack', 'build_config': {'input_shape': [None, 24, 14]}, 'compile_config': {'optimizer': {'module': 'keras.optimizers', 'class_name': 'Adam', 'config': {'name': 'adam', 'learning_rate': 0.0010000000474974513, 'weight_decay': None, 'clipnorm': None, 'global_clipnorm': None, 'clipvalue': None, 'use_ema': False, 'ema_momentum': 0.99, 'ema_overwrite_frequency': None, 'loss_scale_factor': None, 'gradient_accumulation_steps': None, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-07, 'amsgrad': False}, 'registered_name': None}, 'loss': {'module': 'keras.losses', 'class_name': 'MeanSquaredError', 'config': {'name': 'mean_squared_error', 'reduction': 'sum_over_batch_size'}, 'registered_name': None}, 'loss_weights': None, 'metrics': [{'module': 'keras.metrics', 'class_name': 'MeanAbsoluteError', 'config': {'name': 'mean_absolute_error', 'dtype': 'float32'}, 'registered_name': None}], 'weighted_metrics': None, 'run_eagerly': False, 'steps_per_execution': 1, 'jit_compile': False}}.
+
+Exception encountered: Unable to revive model from config. When overriding the `get_config()` method, make sure that the returned config contains all items used as arguments in the  constructor to <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'>, which is the default behavior. You can override this default behavior by defining a `from_config(cls, config)` class method to specify how to create an instance of FeedBack from its config.
+
+Received config={'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}
+
+Error encountered during deserialization: FeedBack.__init__() got an unexpected keyword argument 'trainable']
+Traceback (most recent call last):
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\models\model.py", line 537, in from_config
+    return cls(**config)
+TypeError: FeedBack.__init__() got an unexpected keyword argument 'trainable'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\models\model.py", line 539, in from_config
+    raise TypeError(
+TypeError: Unable to revive model from config. When overriding the `get_config()` method, make sure that the returned config contains all items used as arguments in the  constructor to <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'>, which is the default behavior. You can override this default behavior by defining a `from_config(cls, config)` class method to specify how to create an instance of FeedBack from its config.
+
+Received config={'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}
+
+Error encountered during deserialization: FeedBack.__init__() got an unexpected keyword argument 'trainable'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 61, in <module>
+    loaded_model = tf.keras.models.load_model('./src/weatherTSF/models/autoreg_LSTM.keras')
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 187, in load_model
+    return saving_lib.load_model(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_lib.py", line 365, in load_model
+    return _load_model_from_fileobj(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_lib.py", line 442, in _load_model_from_fileobj
+    model = _model_from_config(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_lib.py", line 431, in _model_from_config
+    model = deserialize_keras_object(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\serialization_lib.py", line 720, in deserialize_keras_object
+    raise TypeError(
+TypeError: <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'src.weatherTSF.components.autoreg_train_model', 'class_name': 'FeedBack', 'config': {'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}, 'registered_name': 'FeedBack', 'build_config': {'input_shape': [None, 24, 14]}, 'compile_config': {'optimizer': {'module': 'keras.optimizers', 'class_name': 'Adam', 'config': {'name': 'adam', 'learning_rate': 0.0010000000474974513, 'weight_decay': None, 'clipnorm': None, 'global_clipnorm': None, 'clipvalue': None, 'use_ema': False, 'ema_momentum': 0.99, 'ema_overwrite_frequency': None, 'loss_scale_factor': None, 'gradient_accumulation_steps': None, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-07, 'amsgrad': False}, 'registered_name': None}, 'loss': {'module': 'keras.losses', 'class_name': 'MeanSquaredError', 'config': {'name': 'mean_squared_error', 'reduction': 'sum_over_batch_size'}, 'registered_name': None}, 'loss_weights': None, 'metrics': [{'module': 'keras.metrics', 'class_name': 'MeanAbsoluteError', 'config': {'name': 'mean_absolute_error', 'dtype': 'float32'}, 'registered_name': None}], 'weighted_metrics': None, 'run_eagerly': False, 'steps_per_execution': 1, 'jit_compile': False}}.
+
+Exception encountered: Unable to revive model from config. When overriding the `get_config()` method, make sure that the returned config contains all items used as arguments in the  constructor to <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'>, which is the default behavior. You can override this default behavior by defining a `from_config(cls, config)` class method to specify how to create an instance of FeedBack from its config.
+
+Received config={'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}
+
+Error encountered during deserialization: FeedBack.__init__() got an unexpected keyword argument 'trainable'
+[2024-10-03 17:08:30,265: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 17:08:46,338: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 17:08:46,338: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 17:08:46,403: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 17:08:46,404: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-03 17:08:46,406: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 17:15:25,867: ERROR: main: <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'src.weatherTSF.components.autoreg_train_model', 'class_name': 'FeedBack', 'config': {'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}, 'registered_name': 'FeedBack', 'build_config': {'input_shape': [None, 24, 14]}, 'compile_config': {'optimizer': {'module': 'keras.optimizers', 'class_name': 'Adam', 'config': {'name': 'adam', 'learning_rate': 0.0010000000474974513, 'weight_decay': None, 'clipnorm': None, 'global_clipnorm': None, 'clipvalue': None, 'use_ema': False, 'ema_momentum': 0.99, 'ema_overwrite_frequency': None, 'loss_scale_factor': None, 'gradient_accumulation_steps': None, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-07, 'amsgrad': False}, 'registered_name': None}, 'loss': {'module': 'keras.losses', 'class_name': 'MeanSquaredError', 'config': {'name': 'mean_squared_error', 'reduction': 'sum_over_batch_size'}, 'registered_name': None}, 'loss_weights': None, 'metrics': [{'module': 'keras.metrics', 'class_name': 'MeanAbsoluteError', 'config': {'name': 'mean_absolute_error', 'dtype': 'float32'}, 'registered_name': None}], 'weighted_metrics': None, 'run_eagerly': False, 'steps_per_execution': 1, 'jit_compile': False}}.
+
+Exception encountered: Unable to revive model from config. When overriding the `get_config()` method, make sure that the returned config contains all items used as arguments in the  constructor to <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'>, which is the default behavior. You can override this default behavior by defining a `from_config(cls, config)` class method to specify how to create an instance of FeedBack from its config.
+
+Received config={'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}
+
+Error encountered during deserialization: FeedBack.__init__() got an unexpected keyword argument 'trainable']
+Traceback (most recent call last):
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\models\model.py", line 537, in from_config
+    return cls(**config)
+TypeError: FeedBack.__init__() got an unexpected keyword argument 'trainable'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\models\model.py", line 539, in from_config
+    raise TypeError(
+TypeError: Unable to revive model from config. When overriding the `get_config()` method, make sure that the returned config contains all items used as arguments in the  constructor to <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'>, which is the default behavior. You can override this default behavior by defining a `from_config(cls, config)` class method to specify how to create an instance of FeedBack from its config.
+
+Received config={'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}
+
+Error encountered during deserialization: FeedBack.__init__() got an unexpected keyword argument 'trainable'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    loaded_model = tf.keras.models.load_model('./src/weatherTSF/models/autoreg_LSTM.keras')
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 187, in load_model
+    return saving_lib.load_model(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_lib.py", line 365, in load_model
+    return _load_model_from_fileobj(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_lib.py", line 442, in _load_model_from_fileobj
+    model = _model_from_config(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_lib.py", line 431, in _model_from_config
+    model = deserialize_keras_object(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\serialization_lib.py", line 720, in deserialize_keras_object
+    raise TypeError(
+TypeError: <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'src.weatherTSF.components.autoreg_train_model', 'class_name': 'FeedBack', 'config': {'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}, 'registered_name': 'FeedBack', 'build_config': {'input_shape': [None, 24, 14]}, 'compile_config': {'optimizer': {'module': 'keras.optimizers', 'class_name': 'Adam', 'config': {'name': 'adam', 'learning_rate': 0.0010000000474974513, 'weight_decay': None, 'clipnorm': None, 'global_clipnorm': None, 'clipvalue': None, 'use_ema': False, 'ema_momentum': 0.99, 'ema_overwrite_frequency': None, 'loss_scale_factor': None, 'gradient_accumulation_steps': None, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-07, 'amsgrad': False}, 'registered_name': None}, 'loss': {'module': 'keras.losses', 'class_name': 'MeanSquaredError', 'config': {'name': 'mean_squared_error', 'reduction': 'sum_over_batch_size'}, 'registered_name': None}, 'loss_weights': None, 'metrics': [{'module': 'keras.metrics', 'class_name': 'MeanAbsoluteError', 'config': {'name': 'mean_absolute_error', 'dtype': 'float32'}, 'registered_name': None}], 'weighted_metrics': None, 'run_eagerly': False, 'steps_per_execution': 1, 'jit_compile': False}}.
+
+Exception encountered: Unable to revive model from config. When overriding the `get_config()` method, make sure that the returned config contains all items used as arguments in the  constructor to <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'>, which is the default behavior. You can override this default behavior by defining a `from_config(cls, config)` class method to specify how to create an instance of FeedBack from its config.
+
+Received config={'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}}
+
+Error encountered during deserialization: FeedBack.__init__() got an unexpected keyword argument 'trainable'
+[2024-10-03 17:36:38,417: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 17:36:56,102: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 17:36:56,103: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 17:36:56,180: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 17:36:56,182: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-03 17:36:56,187: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 17:43:42,304: ERROR: main: 'FeedBack' object has no attribute 'num_features']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 64, in <module>
+    autoregressive_LSTM_Evaluate(feedback_model=feedback_model,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\autoreg_eval_models.py", line 14, in autoregressive_LSTM_Evaluate
+    feedback_model.save(model_path)
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\autoreg_train_model.py", line 57, in get_config
+    'num_features': self.num_features,
+AttributeError: 'FeedBack' object has no attribute 'num_features'
+[2024-10-03 17:44:48,733: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 17:45:10,905: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 17:45:10,905: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 17:45:10,976: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 17:45:10,976: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-03 17:45:10,978: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 17:58:02,421: ERROR: main: <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'src.weatherTSF.components.autoreg_train_model', 'class_name': 'FeedBack', 'config': {'name': 'feed_back', 'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}, 'units': 32, 'out_steps': 24, 'num_features': 14}, 'registered_name': 'FeedBack', 'build_config': {'input_shape': [None, 24, 14]}, 'compile_config': {'optimizer': {'module': 'keras.optimizers', 'class_name': 'Adam', 'config': {'name': 'adam', 'learning_rate': 0.0010000000474974513, 'weight_decay': None, 'clipnorm': None, 'global_clipnorm': None, 'clipvalue': None, 'use_ema': False, 'ema_momentum': 0.99, 'ema_overwrite_frequency': None, 'loss_scale_factor': None, 'gradient_accumulation_steps': None, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-07, 'amsgrad': False}, 'registered_name': None}, 'loss': {'module': 'keras.losses', 'class_name': 'MeanSquaredError', 'config': {'name': 'mean_squared_error', 'reduction': 'sum_over_batch_size'}, 'registered_name': None}, 'loss_weights': None, 'metrics': [{'module': 'keras.metrics', 'class_name': 'MeanAbsoluteError', 'config': {'name': 'mean_absolute_error', 'dtype': 'float32'}, 'registered_name': None}], 'weighted_metrics': None, 'run_eagerly': False, 'steps_per_execution': 1, 'jit_compile': False}}.
+
+Exception encountered: FeedBack.__init__() got an unexpected keyword argument 'name']
+Traceback (most recent call last):
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\autoreg_train_model.py", line 64, in from_config
+    return cls(**config)
+TypeError: FeedBack.__init__() got an unexpected keyword argument 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    loaded_model = tf.keras.models.load_model('./src/weatherTSF/models/autoreg_LSTM.keras', custom_objects={'FeedBack': FeedBack})
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 187, in load_model
+    return saving_lib.load_model(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_lib.py", line 365, in load_model
+    return _load_model_from_fileobj(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_lib.py", line 442, in _load_model_from_fileobj
+    model = _model_from_config(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_lib.py", line 431, in _model_from_config
+    model = deserialize_keras_object(
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\serialization_lib.py", line 720, in deserialize_keras_object
+    raise TypeError(
+TypeError: <class 'src.weatherTSF.components.autoreg_train_model.FeedBack'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'src.weatherTSF.components.autoreg_train_model', 'class_name': 'FeedBack', 'config': {'name': 'feed_back', 'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}, 'units': 32, 'out_steps': 24, 'num_features': 14}, 'registered_name': 'FeedBack', 'build_config': {'input_shape': [None, 24, 14]}, 'compile_config': {'optimizer': {'module': 'keras.optimizers', 'class_name': 'Adam', 'config': {'name': 'adam', 'learning_rate': 0.0010000000474974513, 'weight_decay': None, 'clipnorm': None, 'global_clipnorm': None, 'clipvalue': None, 'use_ema': False, 'ema_momentum': 0.99, 'ema_overwrite_frequency': None, 'loss_scale_factor': None, 'gradient_accumulation_steps': None, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-07, 'amsgrad': False}, 'registered_name': None}, 'loss': {'module': 'keras.losses', 'class_name': 'MeanSquaredError', 'config': {'name': 'mean_squared_error', 'reduction': 'sum_over_batch_size'}, 'registered_name': None}, 'loss_weights': None, 'metrics': [{'module': 'keras.metrics', 'class_name': 'MeanAbsoluteError', 'config': {'name': 'mean_absolute_error', 'dtype': 'float32'}, 'registered_name': None}], 'weighted_metrics': None, 'run_eagerly': False, 'steps_per_execution': 1, 'jit_compile': False}}.
+
+Exception encountered: FeedBack.__init__() got an unexpected keyword argument 'name'
+[2024-10-03 20:30:15,559: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-03 20:30:36,538: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-03 20:30:36,539: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-03 20:30:36,609: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-03 20:30:36,609: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-03 20:30:36,611: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-03 20:53:46,212: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]

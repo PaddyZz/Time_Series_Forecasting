@@ -4,6 +4,7 @@ class FeedBack(tf.keras.Model):
     def __init__(self, units, out_steps, num_features):
         super().__init__()
         self.out_steps = out_steps
+        self.num_features = num_features
         self.units = units
         self.lstm_cell = tf.keras.layers.LSTMCell(units)
         # Also wrap the LSTMCell in an RNN to simplify the `warmup` method.
@@ -48,4 +49,17 @@ class FeedBack(tf.keras.Model):
         # predictions.shape => (batch, time, features)
         predictions = tf.transpose(predictions, [1, 0, 2])
         return predictions
+
+    def get_config(self):
+        config = super(FeedBack, self).get_config()
+        config.update({
+            'units': self.units,
+            'out_steps': self.out_steps,
+            'num_features': self.num_features,
+        })
+        return config
+
+    @classmethod
+    def from_config(cls, config):
+        return cls(**config)
 

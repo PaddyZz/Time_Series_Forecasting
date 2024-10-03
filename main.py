@@ -27,15 +27,15 @@ try:
         train_df,val_df,test_df,num_features = splitDataAndNormalization(df)
         logger.info(f">>>>>> stage {STAGE_NAME_ONE} completed <<<<<<\n\nx==========x")
 
-        """
+        
         logger.info(f">>>>>> stage {STAGE_NAME_TWO} started <<<<<<")
         #WindowGenerator.split_window = split_window
         #WindowGenerator.make_dataset = make_dataset
         wide_window = WindowGenerator(
-        input_width=24, label_width=24, shift=1,
+        input_width=24, label_width=24, shift=24,
         train_df=train_df,val_df=val_df,test_df=test_df,
         label_columns=None)
-        
+        """
         logger.info(f">>>>>> stage {STAGE_NAME_TWO} completed <<<<<<\n\nx==========x")
 
         logger.info(f">>>>>> stage {STAGE_NAME_THREE} started <<<<<<")
@@ -58,11 +58,12 @@ try:
         logger.info(f">>>>>> stage {STAGE_NAME_THREE} completed <<<<<<\n\nx==========x")
         """
         logger.info(f">>>>>> stage {STAGE_NAME_FOUR} started <<<<<<")
-        #loaded_model = tf.keras.models.load_model(model_path)
-        #wide_window.plot(model=loaded_model)
-        #LSTM_Evaluate(df,train_df=train_df,val_df=val_df,test_df=test_df)
-        feedback_model = FeedBack(units=32, out_steps=24,num_features=num_features)
-        autoregressive_LSTM_Evaluate(feedback_model=feedback_model,train_df=train_df,val_df=val_df,test_df=test_df)
+        
+        LSTM_Evaluate(df,train_df=train_df,val_df=val_df,test_df=test_df)
+        #feedback_model = FeedBack(units=32, out_steps=24,num_features=num_features)
+        #autoregressive_LSTM_Evaluate(feedback_model=feedback_model,train_df=train_df,val_df=val_df,test_df=test_df)
+        loaded_model = tf.keras.models.load_model('./src/weatherTSF/models/LSTM.keras')
+        wide_window.plot(model=loaded_model)
         logger.info(f">>>>>> stage {STAGE_NAME_FOUR} completed <<<<<<\n\nx==========x")
 
         
