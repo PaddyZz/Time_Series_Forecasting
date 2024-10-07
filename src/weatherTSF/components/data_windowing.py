@@ -63,8 +63,10 @@ class WindowGenerator():
         self._example = result
     return result
 
-  def plot(self, model=None, plot_col='T (degC)', max_subplots=1):
+  def plot(self, model=None, plot_col='T (degC)', max_subplots=1, saveModelSign = False):
     inputs, labels = self.example
+    print("<<<<<<<< inputs'type\n")
+    print(type(inputs))
     plt.figure(figsize=(12, 8))
     plot_col_index = self.column_indices[plot_col]
     max_n = min(max_subplots, len(inputs))
@@ -84,9 +86,29 @@ class WindowGenerator():
                                                 #label_col_index
       plt.scatter(self.label_indices, labels[n, :, label_col_index],
                   edgecolors='k', label='Labels', c='#2ca02c', s=64)
-      if model is not None:
+      if (model is not None) and (saveModelSign is False):
         predictions = model(inputs)
         plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+                    marker='X', edgecolors='k', label='Predictions',
+                    c='#ff7f0e', s=64)
+      if (model is not None) and (saveModelSign is True):
+        print(" <<<<<<<<<<<<<< front\n\n")
+        print(model.signatures['serving_default'].structured_input_signature)
+        print(" <<<<<<<<<<<<<< end\n\n")
+        print(model.signatures['serving_default'].output_dtypes)
+        infer = model.signatures['serving_default']
+        predictions = infer(inputs)
+
+        print("<<<<<<<<<<<<< predictions type\n")
+        print(type(predictions))
+        print(predictions.keys())
+        pred_tensor = predictions['output_0']
+
+        # 确保 pred_tensor 是一个 TensorFlow 张量，并打印其形状以确认
+        print(type(pred_tensor))
+        print(pred_tensor.shape)
+
+        plt.scatter(self.label_indices, pred_tensor[n, :, label_col_index],
                     marker='X', edgecolors='k', label='Predictions',
                     c='#ff7f0e', s=64)
 

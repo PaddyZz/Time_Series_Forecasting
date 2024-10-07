@@ -1,4 +1,4 @@
-Ipython==7.34.0
+IPython==7.34.0
 matplotlib==3.7.1
 numpy==1.26.4
 pandas==2.1.4

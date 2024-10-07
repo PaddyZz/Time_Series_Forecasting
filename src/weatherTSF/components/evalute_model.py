@@ -73,8 +73,9 @@ def LSTM_Evaluate(df,train_df,val_df,test_df):
     ])
 
     _ = compile_and_fit(multi_lstm_model, multi_window)
-    multi_lstm_model.save("src\weatherTSF\models\LSTM.keras")
+    #multi_lstm_model.save('src/weatherTSF/models/lstm/')
     
+    tf.saved_model.save(multi_lstm_model,'src/weatherTSF/models/lstm/' )
     #IPython.display.clear_output()
 
     _ = multi_lstm_model.evaluate(multi_window.val)

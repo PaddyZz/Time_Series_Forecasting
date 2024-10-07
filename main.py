@@ -59,11 +59,11 @@ try:
         """
         logger.info(f">>>>>> stage {STAGE_NAME_FOUR} started <<<<<<")
         
-        LSTM_Evaluate(df,train_df=train_df,val_df=val_df,test_df=test_df)
-        #feedback_model = FeedBack(units=32, out_steps=24,num_features=num_features)
-        #autoregressive_LSTM_Evaluate(feedback_model=feedback_model,train_df=train_df,val_df=val_df,test_df=test_df)
-        loaded_model = tf.keras.models.load_model('./src/weatherTSF/models/LSTM.keras')
-        wide_window.plot(model=loaded_model)
+        #LSTM_Evaluate(df,train_df=train_df,val_df=val_df,test_df=test_df)
+        
+        loaded_model = tf.saved_model.load('./src/weatherTSF/models/lstm/')
+        wide_window.plot(model=loaded_model, saveModelSign = True)
+
         logger.info(f">>>>>> stage {STAGE_NAME_FOUR} completed <<<<<<\n\nx==========x")
 
         

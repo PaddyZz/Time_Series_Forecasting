@@ -1085,3 +1085,280 @@ x==========x]
 [2024-10-03 20:53:46,212: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
 
 x==========x]
+[2024-10-06 22:20:28,208: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-06 22:20:53,905: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-06 22:20:53,905: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-06 22:20:54,082: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-06 22:20:54,082: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-06 22:20:54,083: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-06 22:45:29,277: ERROR: main: The `save_format` argument is deprecated in Keras 3. Please remove this argument and pass a file path with either `.keras` or `.h5` extension.Received: save_format=tf]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 62, in <module>
+    LSTM_Evaluate(df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 76, in LSTM_Evaluate
+    multi_lstm_model.save('src/weatherTSF/models/lstm/', save_format='tf')
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 69, in save_model
+    raise ValueError(
+ValueError: The `save_format` argument is deprecated in Keras 3. Please remove this argument and pass a file path with either `.keras` or `.h5` extension.Received: save_format=tf
+[2024-10-06 23:05:37,097: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-06 23:05:59,145: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-06 23:05:59,146: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-06 23:05:59,209: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-06 23:05:59,209: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-06 23:05:59,210: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-06 23:09:18,330: ERROR: main: The `save_format` argument is deprecated in Keras 3. Please remove this argument and pass a file path with either `.keras` or `.h5` extension.Received: save_format=tf]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 62, in <module>
+    LSTM_Evaluate(df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 76, in LSTM_Evaluate
+    multi_lstm_model.save('src/weatherTSF/models/lstm/', save_format='tf')
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 69, in save_model
+    raise ValueError(
+ValueError: The `save_format` argument is deprecated in Keras 3. Please remove this argument and pass a file path with either `.keras` or `.h5` extension.Received: save_format=tf
+[2024-10-06 23:10:16,466: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-06 23:10:35,893: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-06 23:10:35,893: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-06 23:10:35,963: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-06 23:10:35,964: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-06 23:10:35,967: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-06 23:13:34,136: ERROR: main: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=src/weatherTSF/models/lstm/.]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 62, in <module>
+    LSTM_Evaluate(df,train_df=train_df,val_df=val_df,test_df=test_df)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\evalute_model.py", line 76, in LSTM_Evaluate
+    multi_lstm_model.save('src/weatherTSF/models/lstm/')
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 114, in save_model
+    raise ValueError(
+ValueError: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=src/weatherTSF/models/lstm/.
+[2024-10-06 23:19:37,324: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-06 23:20:00,362: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-06 23:20:00,363: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-06 23:20:00,427: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-06 23:20:00,427: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-06 23:20:00,429: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-06 23:23:46,302: INFO: builder_impl: Assets written to: src/weatherTSF/models/lstm/assets]
+[2024-10-06 23:24:18,274: ERROR: main: File format not supported: filepath=./src/weatherTSF/models/lstm/. Keras 3 only supports V3 `.keras` files and legacy H5 format files (`.h5` extension). Note that the legacy SavedModel format is not supported by `load_model()` in Keras 3. In order to reload a TensorFlow SavedModel as an inference-only layer in Keras 3, use `keras.layers.TFSMLayer(./src/weatherTSF/models/lstm/, call_endpoint='serving_default')` (note that your `call_endpoint` might have a different name).]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    loaded_model = tf.keras.models.load_model('./src/weatherTSF/models/lstm/')
+  File "C:\Users\14173\miniconda3\envs\weather-tsf\lib\site-packages\keras\src\saving\saving_api.py", line 204, in load_model
+    raise ValueError(
+ValueError: File format not supported: filepath=./src/weatherTSF/models/lstm/. Keras 3 only supports V3 `.keras` files and legacy H5 format files (`.h5` extension). Note that the legacy SavedModel format is not supported by `load_model()` in Keras 3. In order to reload a TensorFlow SavedModel as an inference-only layer in Keras 3, use `keras.layers.TFSMLayer(./src/weatherTSF/models/lstm/, call_endpoint='serving_default')` (note that your `call_endpoint` might have a different name).
+[2024-10-06 23:26:13,591: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-06 23:27:30,614: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-06 23:27:30,614: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-06 23:27:30,677: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-06 23:27:30,678: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-06 23:27:30,679: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-06 23:27:32,247: ERROR: main: '_UserObject' object is not callable]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 66, in <module>
+    wide_window.plot(model=loaded_model)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 88, in plot
+    predictions = model(inputs)
+TypeError: '_UserObject' object is not callable
+[2024-10-07 02:41:10,471: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 02:41:28,837: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 02:41:28,840: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 02:41:28,909: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 02:41:28,909: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 02:41:28,910: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 02:41:30,722: ERROR: main: '_UserObject' object is not callable]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 66, in <module>
+    wide_window.plot(model=loaded_model)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 88, in plot
+    predictions = model(inputs)
+TypeError: '_UserObject' object is not callable
+[2024-10-07 02:50:32,003: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 02:50:51,675: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 02:50:51,675: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 02:50:51,740: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 02:50:51,746: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 02:50:51,747: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 02:50:53,264: ERROR: main: '_UserObject' object is not callable]
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 66, in <module>
+    wide_window.plot(model=loaded_model)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 88, in plot
+    predictions = model(inputs)
+TypeError: '_UserObject' object is not callable
+[2024-10-07 03:03:57,052: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 03:04:17,227: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 03:04:17,227: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 03:04:17,292: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 03:04:17,292: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 03:04:17,294: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 03:04:19,094: ERROR: main: unhashable type: 'slice']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    wide_window.plot(model=loaded_model, saveModelSign = True)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 95, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+TypeError: unhashable type: 'slice'
+[2024-10-07 03:28:11,872: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 03:28:57,697: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 03:28:57,697: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 03:28:57,765: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 03:28:57,773: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 03:28:57,774: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 03:28:59,507: ERROR: main: unhashable type: 'slice']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    wide_window.plot(model=loaded_model, saveModelSign = True)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 96, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+TypeError: unhashable type: 'slice'
+[2024-10-07 03:30:41,533: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 03:32:11,167: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 03:32:11,168: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 03:32:11,230: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 03:32:11,231: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 03:32:11,232: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 03:32:12,925: ERROR: main: unhashable type: 'slice']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    wide_window.plot(model=loaded_model, saveModelSign = True)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 97, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+TypeError: unhashable type: 'slice'
+[2024-10-07 03:39:07,952: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 03:39:30,974: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 03:39:30,974: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 03:39:31,048: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 03:39:31,049: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 03:39:31,050: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 03:39:32,757: ERROR: main: unhashable type: 'slice']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    wide_window.plot(model=loaded_model, saveModelSign = True)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 99, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+TypeError: unhashable type: 'slice'
+[2024-10-07 03:51:58,706: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 03:52:15,252: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 03:52:15,252: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 03:52:15,338: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 03:52:15,341: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 03:52:15,342: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 03:52:16,954: ERROR: main: unhashable type: 'slice']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    wide_window.plot(model=loaded_model, saveModelSign = True)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 101, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+TypeError: unhashable type: 'slice'
+[2024-10-07 03:57:54,982: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 03:58:12,922: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 03:58:12,923: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 03:58:12,990: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 03:58:12,991: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 03:58:12,992: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 03:58:14,752: ERROR: main: 'dict' object has no attribute 'shape']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    wide_window.plot(model=loaded_model, saveModelSign = True)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 104, in plot
+    print(predictions.shape)
+AttributeError: 'dict' object has no attribute 'shape'
+[2024-10-07 04:02:08,960: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 04:02:24,830: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 04:02:24,831: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 04:02:24,899: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 04:02:24,900: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 04:02:24,901: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 04:02:26,667: ERROR: main: unhashable type: 'slice']
+Traceback (most recent call last):
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\main.py", line 65, in <module>
+    wide_window.plot(model=loaded_model, saveModelSign = True)
+  File "C:\Users\14173\Desktop\ML\projects\weatherTSF\src\weatherTSF\components\data_windowing.py", line 107, in plot
+    plt.scatter(self.label_indices, predictions[n, :, label_col_index],
+TypeError: unhashable type: 'slice'
+[2024-10-07 04:05:25,903: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 04:05:48,996: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 04:05:49,387: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 04:05:49,451: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 04:05:49,451: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 04:05:49,452: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 04:24:04,369: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
+[2024-10-07 04:24:22,968: INFO: main: >>>>>> stage DATA_INGESTION started <<<<<<]
+[2024-10-07 04:24:41,222: INFO: main: >>>>>> stage DATA_INGESTION completed <<<<<<
+
+x==========x]
+[2024-10-07 04:24:41,224: INFO: main: >>>>>> stage PRETRAIN_MODEL started <<<<<<]
+[2024-10-07 04:24:41,280: INFO: main: >>>>>> stage PRETRAIN_MODEL completed <<<<<<
+
+x==========x]
+[2024-10-07 04:24:41,280: INFO: main: >>>>>> stage DATA_WINDOWING started <<<<<<]
+[2024-10-07 04:24:41,282: INFO: main: >>>>>> stage MODEL_EVALUATE started <<<<<<]
+[2024-10-07 04:24:48,449: INFO: main: >>>>>> stage MODEL_EVALUATE completed <<<<<<
+
+x==========x]
