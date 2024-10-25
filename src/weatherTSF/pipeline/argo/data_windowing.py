@@ -1,29 +1,25 @@
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
-from src.weatherTSF.config.configuration import (EvaluateConfig)
 
 class WindowGenerator():
-  def __init__(self,config:EvaluateConfig,train_df, val_df, test_df, df):
-    self.config = config
+  def __init__(self, input_width, label_width, shift,
+               train_df, val_df, test_df,
+               label_columns=None):
     # Store the raw data.
     self.train_df = train_df
     self.val_df = val_df
     self.test_df = test_df
-    self.df = df
-    # Work out the label column indices.
 
-    self.label_columns =  [self.config.plot_col] 
-    if self.label_columns is not None:
+    # Work out the label column indices.
+    self.label_columns = label_columns
+    if label_columns is not None:
       self.label_columns_indices = {name: i for i, name in
-                                    enumerate(self.label_columns)}
+                                    enumerate(label_columns)}
     self.column_indices = {name: i for i, name in
                            enumerate(train_df.columns)}
 
     # Work out the window parameters.
-    input_width = self.config.input_width
-    label_width = self.config.label_width
-    shift = self.config.shift
     self.input_width = input_width
     self.label_width = label_width
     self.shift = shift
@@ -67,57 +63,33 @@ class WindowGenerator():
         self._example = result
     return result
 
-  def plot(self, model=None,  max_subplots=1):
+  def plot(self, plot_col='T (degC)', max_subplots=1, pred_tensor=None):
     inputs, labels = self.example
-    saveModelSign = self.config.save_keras
-    plot_col=self.config.plot_col
     plt.figure(figsize=(12, 8))
     plot_col_index = self.column_indices[plot_col]
     max_n = min(max_subplots, len(inputs))
     for n in range(max_n):
       plt.subplot(max_n, 1, n+1)
+      plt.ylabel(f'{plot_col} [normed]')
+      plt.plot(self.input_indices, inputs[n, :, plot_col_index],
+              label='Inputs', marker='.', zorder=-10)
+
       if self.label_columns:
         label_col_index = self.label_columns_indices.get(plot_col, None)
       else:
         label_col_index = plot_col_index
-      if self.config.plot_origin:
-        plt.ylabel(f'{plot_col}')
-        plt.plot(self.input_indices, inputs[n, :, plot_col_index]*self.df[self.config.plot_col].std() + self.df[self.config.plot_col].mean(),
-                label='Inputs', marker='.', zorder=-10)
-        plt.scatter(self.label_indices, labels[n, :, label_col_index]*self.df[self.config.plot_col].std() + self.df[self.config.plot_col].mean(),
-                  edgecolors='k', label='Labels', c='#2ca02c', s=64)
-      else:
-        plt.ylabel(f'{plot_col} [normed]')
-        plt.plot(self.input_indices, inputs[n, :, plot_col_index],
-                label='Inputs', marker='.', zorder=-10)
-        plt.scatter(self.label_indices, labels[n, :, label_col_index],
-                  edgecolors='k', label='Labels', c='#2ca02c', s=64)
-      if (model is not None) and (saveModelSign is True):
-        predictions = model(inputs)
-        if self.config.plot_origin:
-          plt.scatter(self.label_indices, predictions[n, :, label_col_index]*self.df[self.config.plot_col].std() + self.df[self.config.plot_col].mean(),
-                      marker='X', edgecolors='k', label='Predictions',
-                      c='#ff7f0e', s=64)
-        else:
-          plt.scatter(self.label_indices, predictions[n, :, label_col_index],
-                      marker='X', edgecolors='k', label='Predictions',
-                      c='#ff7f0e', s=64)
-      if (model is not None) and (saveModelSign is False):
-        infer = model.signatures['serving_default']
-        predictions = infer(inputs)
-        pred_tensor = predictions['output_0']
-        if self.config.plot_origin:
-          plt.scatter(self.label_indices, pred_tensor[n, :, label_col_index ]*self.df[self.config.plot_col].std() + self.df[self.config.plot_col].mean(),
-              marker='X', edgecolors='k', label='Predictions',
-              c='#ff7f0e', s=64)
-        else:
-          plt.scatter(self.label_indices, pred_tensor[n, :, label_col_index ],
-                      marker='X', edgecolors='k', label='Predictions',
-                      c='#ff7f0e', s=64)
+
+      if label_col_index is None:
+        continue
+      
+      if  pred_tensor is not None:
+        plt.scatter(self.label_indices, pred_tensor[n, :, label_col_index],
+                    marker='X', edgecolors='k', label='Predictions',
+                    c='#ff7f0e', s=64)
 
       if n == 0:
         plt.legend()
-    plt.savefig(self.config.image_saved_dir,dpi=500, bbox_inches='tight')
+
     plt.xlabel('Time [h]')
     plt.show()
 
@@ -137,7 +109,8 @@ class WindowGenerator():
         return inputs, labels
 
   def make_dataset(self, data):
-        data = np.array(data, dtype=np.float32)
+        if not isinstance(data, np.ndarray):
+           data = np.array(data, dtype=np.float32)
         ds = tf.keras.utils.timeseries_dataset_from_array(
             data=data,
             targets=None,

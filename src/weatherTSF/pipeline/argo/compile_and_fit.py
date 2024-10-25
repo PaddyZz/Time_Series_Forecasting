@@ -1,6 +1,5 @@
 import tensorflow as tf
 
-MAX_EPOCHS = 20
 
 def compile_and_fit(model, window, patience=2):
 
@@ -13,7 +12,7 @@ def compile_and_fit(model, window, patience=2):
                     metrics=[tf.keras.metrics.MeanAbsoluteError()])
 
     
-    history = model.fit(window.train, epochs=MAX_EPOCHS,
+    history = model.fit(window.train, epochs=20,
                         validation_data=window.val,
                         callbacks=[early_stopping])
     

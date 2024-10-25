@@ -1,0 +1,22 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  dataset_name: jena_climate_2009_2016.csv.zip
+  dataset_URL: https://storage.googleapis.com/tensorflow/tf-keras-datasets/jena_climate_2009_2016.csv.zip
+  model_zip_file: artifacts/data_ingestion/jena_climate_2009_2016.csv.zip
+  model_unzip_dir: artifacts/data_ingestion/unzip_dir
+
+pretrain_model:
+  root_dir: artifacts/pretrain_model
+
+train_model:
+  root_dir: artifacts/train_model
+
+evaluate_model:
+  root_dir: artifacts/evaluate_model
+  saved_model_dir: artifacts/saved_model
+  keras_saved_model_dir:  src/weatherTSF/models/lstm/keras/lstm.keras
+  tf_saved_model_dir: src/weatherTSF/models/lstm/
+  image_saved_dir: src/weatherTSF/image/plot.png
