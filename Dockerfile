@@ -1,5 +1,5 @@
 
-FROM python:3.10.2
+FROM python:3.10.3
 RUN pip install virtualenv
 RUN virtualenv /env
 ENV VIRTUAL_ENV=/env
