@@ -37,13 +37,29 @@ python main.py [-c | --config] <params=value>
 
 - `OUT_STEPS`: Set the number of steps to predict in the future (e.g., `24`), type is integer, default is `1`.
 
-- `PLOT_COL`: Specify the column to visualize in plots (e.g., `rho (g/m³)`), type is string, default is `'rho (g/m³)'`.
-
 - `PLOT_ORIGIN`: Set whether to plot line with the original data unit (e.g., `false`), type is boolean, default is `false`.
 
 - `SAVE_KERAS`: Set whether to save the Keras model after training (e.g., `false`), type is boolean, default is `false`.
 
-- `SHIFT`: Set the number of time steps to be shifted from the input data (e.g., `24`), type is integer, default is `0`.
+- `SHIFT`: Set the number of days to be predicted from the input data (e.g., `24`), type is integer, default is `1`.
+  
+- `PLOT_COL`: Specify the column to visualize in plots (e.g., `rho (g/m³)`), type is string, default is `'rho (g/m³)'`.
+
+## PLOT_COL column parameters
+- **p (mbar)**: Measures atmospheric pressure, indicating weather systems.
+- **T (degC)**: Represents the air temperature, critical for weather forecasting.
+- **Tpot (K)**: Indicates potential temperature, important for understanding stability in the atmosphere.
+- **Tdew (degC)**: Shows the dew point, which helps in assessing humidity and comfort levels.
+- **rh (%)**: Indicates relative humidity, essential for predicting precipitation and fog.
+- **VPmax (mbar)**: Maximum vapor pressure, representing the upper limit of moisture in the air.
+- **VPact (mbar)**: Actual vapor pressure, showing the current moisture content.
+- **VPdef (mbar)**: Vapor pressure deficit, indicating dryness in the air.
+- **sh (g/kg)**: Specific humidity, quantifying the amount of water vapor present in the air.
+- **H2OC (mmol/mol)**: Water vapor concentration, providing insight into atmospheric moisture.
+- **rho (g/m³)**: Air density, affecting buoyancy and weather patterns.
+- **wv (m/s)**: Wind velocity, indicating wind strength.
+- **max. wv (m/s)**: Maximum wind velocity, highlighting peak wind conditions.
+- **wd (deg)**: Wind direction, crucial for understanding weather patterns and forecasting.
 
 
 ## Dockerfile
