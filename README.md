@@ -1,4 +1,4 @@
-# TimeSeriesForecasting(LSTM)
+# Time Series Forecasting(LSTM)
 
 ## Introduction
 
