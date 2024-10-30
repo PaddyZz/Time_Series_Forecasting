@@ -81,7 +81,9 @@ docker build
 ```
 
 ## Blog
-blog_link
+[Time Series Forecasting LSTM](https://paddyzz.github.io/projects/time_series_forecasting/)
+
+[Deploy Model to Kubeflow and implement workflow](https://paddyzz.github.io/projects/Config_Kubeflow/)
 
 ## Reference
 [Time Series Forecasting](https://www.tensorflow.org/tutorials/structured_data/time_series)
